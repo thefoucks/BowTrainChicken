@@ -1,0 +1,53 @@
+# BowTrainChicken Configuration File
+
+# General Settings
+game:
+  countdown: 5          # Countdown before game starts in seconds
+  duration: 90          # Game duration in seconds (1.5 minutes)
+  back_delay: 10        # Delay before teleporting back in seconds
+  
+# Weapon Settings
+weapon:
+  unbreaking_level: 10  # Unbreaking enchantment level
+  infinity_level: 1     # Infinity enchantment level
+  arrow_amount: 64      # Number of arrows to give
+
+# World Settings
+world:
+  gamerules:
+    doMobSpawning: false
+    doDaylightCycle: false
+    doWeatherCycle: false
+    keepInventory: true
+    naturalRegeneration: true
+    announceAdvancements: false
+    doFireTick: false
+
+# Text Settings
+text:
+  use_adventure_actionbar: true  # Use Adventure API for ActionBar (Paper)
+  
+# Storage Settings
+storage:
+  type: YAML  # YAML, SQLITE, MYSQL (future)
+  
+# Timezone (optional override)
+# timezone: "UTC"
+
+# Default Values
+defaults:
+  chicken_points: 1     # Default points per chicken
+  chicken_health: 1.0   # Chicken health (0.5 = half heart)
+  
+# Messages
+messages:
+  prefix: "&6[BTC] &r"
+  game_start: "&aGame starting in {countdown} seconds..."
+  game_over: "&6&lGAME OVER"
+  score_display: "&eYour final score: &6&l{score} points"
+  no_permission: "&cYou don't have permission to use this command!"
+  player_only: "&cThis command can only be used by players!"
+  already_in_game: "&cYou are already in a game!"
+  map_not_found: "&cMap '{map}' does not exist!"
+  map_created: "&aMap '{map}' has been created with spawn point at your current location!"
+  map_updated: "&aMap '{map}' has been updated with new spawn point at your current location!"

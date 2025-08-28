@@ -1,0 +1,24 @@
+name: BowTrainChicken
+version: 1.0.0
+main: com.bowtrain.BowTrainChicken
+api-version: 1.21
+author: BowTrain
+description: A bow training game with chickens
+
+commands:
+  btc:
+    description: Main BowTrainChicken command
+    usage: /btc <subcommand>
+    permission: btc.use
+    aliases: [bowtrain]
+
+permissions:
+  btc.use:
+    description: Basic permission to use the plugin
+    default: true
+  btc.admin:
+    description: Admin permission for map management
+    default: op
+  btc.elevated:
+    description: Elevated permission for map management (granted by admins)
+    default: false

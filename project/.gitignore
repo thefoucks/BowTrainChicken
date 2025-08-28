@@ -1,0 +1,13 @@
+# Ignore build files
+/target/
+/out/
+
+# IntelliJ / Eclipse / VSCode
+.idea/
+*.iml
+.classpath
+.project
+.vscode/
+
+# Logs
+*.log
